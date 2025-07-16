@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
+import i1 from "../img/img1.jpg";
+import i2 from "../img/img2.jpg";
+import i3 from "../img/img3.jpg";
 
 export const Home = () => {
   const [search, setSearch] = useState("");
@@ -77,26 +80,26 @@ export const Home = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="https://picsum.photos/seed/burger/900/300"
+                src={i1}
                 className="d-block w-100"
                 alt="Burger"
-                style={{ objectFit: "cover", filter: "brightness(60%)" }}
+                style={{ objectFit: "cover", filter: "brightness(60%)" , height: "450px"}}
               />
             </div>
             <div className="carousel-item">
               <img
-                src="https://picsum.photos/seed/pizza/900/300"
+                src={i2}
                 className="d-block w-100"
                 alt="Pizza"
-                style={{ objectFit: "cover", filter: "brightness(60%)" }}
+                style={{ objectFit: "cover", filter: "brightness(60%)"  , height: "450px"}}
               />
             </div>
             <div className="carousel-item">
               <img
-                src="https://picsum.photos/seed/sandwich/900/300"
+                src={i3}
                 className="d-block w-100"
                 alt="Sandwich"
-                style={{ objectFit: "cover", filter: "brightness(60%)" }}
+                style={{ objectFit: "cover", filter: "brightness(60%)" , height: "450px"}}
               />
             </div>
           </div>

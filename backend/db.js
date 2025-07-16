@@ -18,10 +18,7 @@ const User = mongoose.model('User', UserSchema);
 // 3. Connect to MongoDB and fetch food_items
 const mongoDB = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/mernApp', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
+    await mongoose.connect('mongodb://localhost:27017/mernApp', {});
 
     console.log('MongoDB connected ✅');
 
